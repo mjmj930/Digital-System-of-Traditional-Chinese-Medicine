@@ -14,7 +14,7 @@ params = {
     "page": 1
 }
 
-with open('herbal_info_2.csv', 'w', newline='', encoding='gbk') as csvfile:
+with open('herbal_info_part2.csv', 'w', newline='', encoding='utf-8') as csvfile:
     fieldnames = ['名称', '拼音', '英文名', '拉丁名', '类别', '来源', '产地', '性状', '品质', '性味', '功效']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 

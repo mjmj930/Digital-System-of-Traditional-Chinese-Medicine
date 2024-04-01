@@ -10,17 +10,18 @@ base_url = "https://sys01.lib.hkbu.edu.hk/cmed/mmid/detail.php"
 params = {
     "lang": "chs",
     "sort": "name_cht",
+    "fac_type_chs": "果实及种子类",
     "page": 1
 }
 
-with open('herbal_info_1.csv', 'w', newline='', encoding='gbk') as csvfile:
+with open('herbal_info_part3.csv', 'w', newline='', encoding='utf-8') as csvfile:
     fieldnames = ['名称', '拼音', '英文名', '拉丁名', '类别', '来源', '产地', '性状', '品质', '性味', '功效']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
     # 写入字段名
     writer.writeheader()
 
-    for pid in range(1, 100):
+    for pid in range(201, 300):
         pid_str = f"B0000{pid}" if pid < 10 else f"B000{pid}" if pid < 100 else f"B00{pid}"
         params["pid"] = pid_str
         url = base_url + "?" + "&".join([f"{k}={v}" for k, v in params.items()])

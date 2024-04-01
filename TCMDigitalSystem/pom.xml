@@ -8,30 +8,41 @@
 		<version>3.2.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.tcmds</groupId>
 	<artifactId>TCMDigitalSystem</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>TCMDigitalSystem</name>
 	<description>TCMDigitalSystem</description>
+
+
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
 	<dependencies>
+
+		<!--	Sprin Boot web	依赖	-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!--	MYSQL 连接驱动依赖		-->
 		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<!--	Spring Boot Test 依赖		-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
