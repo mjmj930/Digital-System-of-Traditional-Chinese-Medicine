@@ -23,7 +23,7 @@
 
 	<dependencies>
 
-		<!--	Sprin Boot web	依赖	-->
+		<!--	Spring Boot web	依赖	-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -41,6 +41,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<!--	Mybatis 依赖	-->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>3.0.3</version>
 		</dependency>
 
 	</dependencies>
