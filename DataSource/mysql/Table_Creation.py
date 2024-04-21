@@ -18,13 +18,13 @@ try:
         cursor.execute("USE herbal_sys")
 
 
-        #药材类别表
+        #方剂类别表
         create_table_queries = """        
         CREATE TABLE herb_category (
         category_id INT PRIMARY KEY AUTO_INCREMENT COMMENT '类别ID',
         parent_id INT COMMENT '父类别ID',
         name VARCHAR(50) NOT NULL COMMENT '类别名称',
-        code VARCHAR(20) COMMENT '类别编码',
+        code VARCHAR(20) UNIQUE COMMENT '类别编码',
         level TINYINT UNSIGNED COMMENT '类别层级',
         description VARCHAR(255) COMMENT '类别描述',
         category_create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
@@ -85,3 +85,6 @@ except Exception as e:
 finally:
     # 关闭数据库连接
     connection.close()
+
+    # ALTER   TABLE herb_basic_info
+    # ADD CONSTRAINT fk_herb_category FOREIGN KEY(category_id) REFERENCES herb_category(category_id);

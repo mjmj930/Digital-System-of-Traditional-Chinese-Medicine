@@ -8,7 +8,6 @@
 
 
 
-
 # encoding:utf-8
 
 import requests
@@ -21,7 +20,7 @@ import pandas as pd
 
 request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/table"
 # 二进制方式打开图片文件
-f = open('test_02a.png', 'rb')
+f = open('images/test_02a.png', 'rb')
 img = base64.b64encode(f.read())
 
 params = {"image":img}

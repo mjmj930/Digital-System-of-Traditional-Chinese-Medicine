@@ -12,7 +12,7 @@ import csv
 
 request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/accurate_basic"
 # 二进制方式打开图片文件
-f = open('D:/Digital-System-of-Traditional-Chinese-Medicine/DataSource/pythonOcr/images/test_03.jpg', 'rb')
+f = open('D:/Digital-System-of-Traditional-Chinese-Medicine/DataSource/pythonOcr/images/test_02a.png', 'rb')
 img = base64.b64encode(f.read())
 
 params = {"image":img}
