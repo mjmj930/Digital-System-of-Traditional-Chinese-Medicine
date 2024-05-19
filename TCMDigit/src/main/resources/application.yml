@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: tcmdigit
+server:
+  port: 9527
