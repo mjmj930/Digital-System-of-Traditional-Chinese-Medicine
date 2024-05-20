@@ -6,6 +6,10 @@
 * [ ] 建立一个养生中药材数据库；
 * [ ] 开发一套数字化药材库系统
 
+### front-end:[tcmdigit-web](https://github.com/mjmj930/tcmdigit-web.git)
+### back-end:[tcmdigit](https://github.com/mjmj930/tcmdigit.git)
+
+
 # 所需环境
 
 本项目开发所使用的环境如下：
